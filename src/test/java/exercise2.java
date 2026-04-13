@@ -1,5 +1,3 @@
-package org.example;
-
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,5 +1,3 @@
-package org.example;
-
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;

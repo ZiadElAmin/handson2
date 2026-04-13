@@ -23,11 +23,11 @@ jobs:
 
       - name: Run Exercise 2 Suite
 
-        run: mvn test -DsuiteXmlFile=src/main/resources/exercise2.xml
+        run: mvn test -DsuiteXmlFile=src/test/resources/exercise2.xml
 
       - name: Run Exercise 3 Suite
 
-        run: mvn test -DsuiteXmlFile=src/main/resources/exercise3.xml
+        run: mvn test -DsuiteXmlFile=src/test/resources/exercise3.xml
 
       - name: Upload HTML Report
         if: always()
