@@ -18,14 +18,14 @@ public class exercise2 {
     @BeforeClass
     public void setup(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
-           // ChromeOptions options = new ChromeOptions();
-           // options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
-            driver = new ChromeDriver();
+           ChromeOptions options = new ChromeOptions();
+           options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+            driver = new ChromeDriver(options);
         } else {
-           // FirefoxOptions options = new FirefoxOptions();
+            FirefoxOptions options = new FirefoxOptions();
 
-            //options.addArguments("-headless");
-            driver = new FirefoxDriver();
+            options.addArguments("-headless");
+            driver = new FirefoxDriver(options);
         }
     }
     @BeforeMethod
